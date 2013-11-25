@@ -14,11 +14,11 @@ env.port = '22222'
 env.user = 'root'
 env.code_user = 'root'
 env.prod_user = 'www'
-env.webserver = '4zu1'
-env.code_root = '4zu1'
+env.webserver = '/opt/webserver/buildout.webserver'
+env.code_root = '/opt/webserver/buildout.webserver'
 env.host_root = '/opt/sites'
 
-env.hosts = ['4zu1']
+env.hosts = ['z2']
 env.hosted_sites = [
     'example.tld',
 ]
