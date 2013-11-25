@@ -97,4 +97,8 @@ def hotfix(addon=None):
 @task
 def bootstrap():
     """ Bootstrap server and setup the webserver automagically """
+    setup.set_hostname(
+        server_ip='%(server_ip)s',
+        hostname='%(hostname)s'
+    ) % env
     setup.install_system_libs
