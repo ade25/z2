@@ -5,6 +5,7 @@ from fabric.api import run
 from fabric.api import task
 
 from ade25.fabfiles import project
+from ade25.fabfiles.server import setup
 from ade25.fabfiles.server import controls
 from ade25.fabfiles import hotfix as hf
 
@@ -17,6 +18,9 @@ env.prod_user = 'www'
 env.webserver = '/opt/webserver/buildout.webserver'
 env.code_root = '/opt/webserver/buildout.webserver'
 env.host_root = '/opt/sites'
+
+env.hostname = 'z2.ade25.de'
+env.server_ip = '5.9.40.61'
 
 env.hosts = ['z2']
 env.hosted_sites = [
@@ -88,3 +92,9 @@ def hotfix(addon=None):
     """ Apply hotfix to all hosted sites """
     hf.prepare_sites()
     hf.process_hotfix()
+
+
+@task
+def bootstrap():
+    """ Bootstrap server and setup the webserver automagically """
+    setup.install_system_libs
