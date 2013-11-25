@@ -1,0 +1,12 @@
+{
+  "server": "zope10",
+  "servername": "${hosts:public}",
+  "sites": [
+    {
+      "title": "${sites:zope1}",
+      "type": "plone",
+      "port": "${ports:zope1}",
+      "url": "${hosts:zope1}"
+    }
+  ]
+}
