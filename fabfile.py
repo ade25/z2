@@ -22,6 +22,8 @@ env.host_root = '/opt/sites'
 env.hostname = 'z2.ade25.de'
 env.server_ip = '5.9.40.61'
 
+env.git_repo = 'git@github.com:ade25/z2.git'
+
 env.hosts = ['z2']
 env.hosted_sites = [
     'example.tld',
@@ -97,8 +99,13 @@ def hotfix(addon=None):
 @task
 def bootstrap():
     """ Bootstrap server and setup the webserver automagically """
-    setup.set_hostname(
-        server_ip='%(server_ip)s',
-        hostname='%(hostname)s'
-    ) % env
-    setup.install_system_libs
+    # setup.install_system_libs()
+    # setup.set_hostname()
+    # setup.configure_fs()
+    # setup.set_project_user_and_group('www', 'www')
+    # setup.configure_egg_cache()
+    #with cd('/opt'):
+        # setup.install_python()
+    #    setup.generate_virtualenv(sitename='webserver')
+    with cd('/opt/webserver'):
+        setup.install_webserver()
