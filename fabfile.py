@@ -104,8 +104,8 @@ def bootstrap():
     # setup.configure_fs()
     # setup.set_project_user_and_group('www', 'www')
     # setup.configure_egg_cache()
-    #with cd('/opt'):
+    with cd('/opt'):
         # setup.install_python()
-    #    setup.generate_virtualenv(sitename='webserver')
+        setup.generate_virtualenv(sitename='webserver')
     with cd('/opt/webserver'):
         setup.install_webserver()
