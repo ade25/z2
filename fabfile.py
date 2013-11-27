@@ -24,6 +24,7 @@ env.server_ip = '5.9.40.61'
 
 env.git_repo = 'git@github.com:ade25/z2.git'
 
+env.host = 'z2'
 env.hosts = ['z2']
 env.hosted_sites = [
     'example.tld',
@@ -109,3 +110,4 @@ def bootstrap():
         setup.generate_virtualenv(sitename='webserver')
     with cd('/opt/webserver'):
         setup.install_webserver()
+    setup.setup_webserver_autostart()
