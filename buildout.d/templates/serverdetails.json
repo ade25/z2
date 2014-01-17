@@ -18,7 +18,19 @@
       "title": "${sites:zope3}",
       "type": "plone",
       "port": "${ports:zope3}",
-      "url": "${hosts:zope3}"
+      "url": "${hosts:zope3}",
+    }
+    {
+      "title": "${sites:zope4}",
+      "type": "plone",
+      "port": "${ports:zope4}",
+      "url": "${hosts:zope4}",
+    }
+    {
+      "title": "${sites:zope5}",
+      "type": "plone",
+      "port": "${ports:zope5}",
+      "url": "${hosts:zope5}"
     }
   ]
 }
