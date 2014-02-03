@@ -6,25 +6,25 @@
       "title": "${sites:zope1}",
       "type": "plone",
       "port": "${ports:zope1}",
-      "url": "${hosts:zope1}",
+      "url": "${hosts:zope1}"
     },
     {
       "title": "${sites:zope2}",
       "type": "plone",
       "port": "${ports:zope2}",
-      "url": "${hosts:zope2}",
+      "url": "${hosts:zope2}"
     },
     {
       "title": "${sites:zope3}",
       "type": "plone",
       "port": "${ports:zope3}",
-      "url": "${hosts:zope3}",
+      "url": "${hosts:zope3}"
     },
     {
       "title": "${sites:zope4}",
       "type": "plone",
       "port": "${ports:zope4}",
-      "url": "${hosts:zope4}",
+      "url": "${hosts:zope4}"
     },
     {
       "title": "${sites:zope5}",
