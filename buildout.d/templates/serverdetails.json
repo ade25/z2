@@ -33,10 +33,10 @@
       "url": "${hosts:zope5}",
     }
     {
-      "title": "${sites:zope5}",
+      "title": "${sites:zope6}",
       "type": "plone",
-      "port": "${ports:zope5}",
-      "url": "${hosts:zope5}"
+      "port": "${ports:zope6}",
+      "url": "${hosts:zope6}"
     }
   ]
 }
