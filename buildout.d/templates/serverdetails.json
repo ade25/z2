@@ -30,6 +30,12 @@
       "title": "${sites:zope5}",
       "type": "plone",
       "port": "${ports:zope5}",
+      "url": "${hosts:zope5}",
+    }
+    {
+      "title": "${sites:zope5}",
+      "type": "plone",
+      "port": "${ports:zope5}",
       "url": "${hosts:zope5}"
     }
   ]
