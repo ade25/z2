@@ -36,7 +36,13 @@
       "title": "${sites:zope6}",
       "type": "plone",
       "port": "${ports:zope6}",
-      "url": "${hosts:zope6}"
+      "url": "${hosts:zope6}",
+    }
+    {
+      "title": "${sites:zope7}",
+      "type": "plone",
+      "port": "${ports:zope7}",
+      "url": "${hosts:zope7}"
     }
   ]
 }
