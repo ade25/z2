@@ -42,7 +42,13 @@
       "title": "${sites:zope7}",
       "type": "plone",
       "port": "${ports:zope7}",
-      "url": "${hosts:zope7}"
+      "url": "${hosts:zope7}",
+    }
+    {
+      "title": "${sites:zope8}",
+      "type": "plone",
+      "port": "${ports:zope8}",
+      "url": "${hosts:zope8}"
     }
   ]
 }
