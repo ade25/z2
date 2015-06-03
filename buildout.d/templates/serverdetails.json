@@ -70,6 +70,12 @@
       "type": "plone",
       "port": "${ports:zope11}",
       "url": "${hosts:zope11}"
+    },
+    {
+      "title": "${sites:zope12}",
+      "type": "plone",
+      "port": "${ports:zope12}",
+      "url": "${hosts:zope12}"
     }
   ]
 }
