@@ -24,12 +24,6 @@
       "url": "${hosts:zope3}"
     },
     {
-      "title": "${sites:zope4}",
-      "type": "plone",
-      "port": "${ports:zope4}",
-      "url": "${hosts:zope4}"
-    },
-    {
       "title": "${sites:zope5}",
       "type": "plone",
       "port": "${ports:zope5}",
@@ -40,12 +34,6 @@
       "type": "plone",
       "port": "${ports:zope6}",
       "url": "${hosts:zope6}"
-    },
-    {
-      "title": "${sites:zope7}",
-      "type": "plone",
-      "port": "${ports:zope7}",
-      "url": "${hosts:zope7}"
     },
     {
       "title": "${sites:zope8}",
