@@ -22,5 +22,16 @@ var
 *.pyo
 *-ck.js
 .codeintel
-src/ade25.fabfiles
+.sublime-project
+etc/*
+etc/vhosts/*.conf
+htdocs/*.json
+src/ade25.*
+fabfile.py
+known-good-versions.cfg
 .DS_Store
+.Python
+# Enable nginx specific settings
+!cache_control_assets.conf
+!disable_logging.conf
+!proxy_settings.conf
